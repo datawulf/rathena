@@ -4350,7 +4350,7 @@ int32 status_calc_pc_sub(map_session_data* sd, uint8 opt)
 #endif
 
 	// Druid/Karnos passive bonuses affecting max HP/SP and SP recovery.
-	if (!(sc->hasSCE(SC_WEREWOLF) || sc->hasSCE(SC_WERERAPTOR)) && (skill = pc_checkskill(sd, KR_EARTH_BUD)) > 0)
+	if ((skill = pc_checkskill(sd, KR_EARTH_BUD)) > 0)
 		sd->hprate += skill * 2;
 	if ((skill = pc_checkskill(sd, KR_NATURE_VIGOUR)) > 0) {
 		sd->sprate += skill * 2;

@@ -2399,9 +2399,7 @@
     <ClCompile Include="skills/druid/shootingfeather.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="skills/druid/skill_factory_druid.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="skills/druid/skill_factory_druid.cpp" />
     <ClCompile Include="skills/druid/solidstomp.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>

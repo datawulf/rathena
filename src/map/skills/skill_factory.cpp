@@ -37,6 +37,7 @@ std::unique_ptr<const SkillImpl> SkillFactoryImpl::create(const e_skill skill_id
 		// Normal Skills
 		std::make_shared<SkillFactoryAcolyte>(),
 		std::make_shared<SkillFactoryArcher>(),
+		std::make_shared<SkillFactoryDruid>(),
 		std::make_shared<SkillFactoryElemental>(),
 		std::make_shared<SkillFactoryGunslinger>(),
 		std::make_shared<SkillFactoryHomunculus>(),
@@ -48,7 +49,6 @@ std::unique_ptr<const SkillImpl> SkillFactoryImpl::create(const e_skill skill_id
 		std::make_shared<SkillFactoryNovice>(),
 		std::make_shared<SkillFactoryOther>(),
 		std::make_shared<SkillFactorySummoner>(),
-		std::make_shared<SkillFactoryDruid>(),
 		std::make_shared<SkillFactorySwordman>(),
 		std::make_shared<SkillFactoryTaekwon>(),
 		std::make_shared<SkillFactoryThief>(),

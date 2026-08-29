@@ -3,6 +3,8 @@
 
 #include "skill_factory_druid.hpp"
 
+#include "../skill_impl.hpp"
+
 #include <cstdarg>
 
 #include <common/random.hpp>
