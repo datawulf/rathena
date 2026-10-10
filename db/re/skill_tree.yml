@@ -9095,6 +9095,16 @@ Body:
         Requires:
           - Name: AT_NATURE_HARMONY
             Level: 5
+      - Name: AT_PLUME_PIERCER
+        MaxLevel: 5
+        Requires:
+          - Name: AT_QUILL_SPEAR
+            Level: 3
+      - Name: AT_NATURE_RAGE
+        MaxLevel: 5
+        Requires:
+          - Name: AT_NATURE_AID
+            Level: 3
   - Job: Baby_Druid
     Inherit:
       Baby: true

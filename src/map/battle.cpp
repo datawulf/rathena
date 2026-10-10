@@ -3025,6 +3025,13 @@ static bool is_attack_critical(struct Damage* wd, block_list *src, const block_l
 	if (!first_call)
 		return (wd->type == DMG_CRITICAL || wd->type == DMG_MULTI_HIT_CRITICAL);
 
+	if (skill_id == AT_PLUME_PIERCER) {
+		const status_change* sc = status_get_sc(src);
+
+		if (sc == nullptr || sc->getSCE(SC_APEX_PHASE) == nullptr)
+			return false;
+	}
+
 	if (skill_id == NPC_CRITICALSLASH || skill_id == LG_PINPOINTATTACK) //Always critical skills
 		return true;
 

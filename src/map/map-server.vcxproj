@@ -506,8 +506,10 @@
     <ClInclude Include="skills/druid/lowflight.hpp" />
     <ClInclude Include="skills/druid/nastyslash.hpp" />
     <ClInclude Include="skills/druid/natureprotection.hpp" />
+    <ClInclude Include="skills/druid/naturerage.hpp" />
     <ClInclude Include="skills/druid/nomercyclaw.hpp" />
     <ClInclude Include="skills/druid/pinionshot.hpp" />
+    <ClInclude Include="skills/druid/plumepiercer.hpp" />
     <ClInclude Include="skills/druid/primalclaw.hpp" />
     <ClInclude Include="skills/druid/pulseofmadness.hpp" />
     <ClInclude Include="skills/druid/quillspear.hpp" />
@@ -2399,6 +2401,8 @@
     <ClCompile Include="skills/druid/shootingfeather.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="skills/druid/naturerage.cpp" />
+    <ClCompile Include="skills/druid/plumepiercer.cpp" />
     <ClCompile Include="skills/druid/skill_factory_druid.cpp" />
     <ClCompile Include="skills/druid/solidstomp.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>

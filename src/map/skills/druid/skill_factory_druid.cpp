@@ -71,6 +71,8 @@
 #include "thunderingorb.cpp"
 #include "typhoonwing.cpp"
 #include "windbomb.cpp"
+#include "plumepiercer.cpp"
+#include "naturerage.cpp"
 
 	constexpr int32 kGrowthDuration = 10000;
 
@@ -117,6 +119,10 @@
 
 std::unique_ptr<const SkillImpl> SkillFactoryDruid::create(const e_skill skill_id) const {
 	switch (skill_id) {
+		case AT_NATURE_RAGE:
+			return std::make_unique<SkillNatureRage>();
+		case AT_PLUME_PIERCER:
+			return std::make_unique<SkillPlumePiercer>();
 		case DR_AROUND_FLOWER:
 			return std::make_unique<SkillAroundFlower>();
 		case DR_BLOOD_HOWLING:
