@@ -3028,7 +3028,7 @@ static bool is_attack_critical(struct Damage* wd, block_list *src, const block_l
 	if (skill_id == AT_PLUME_PIERCER) {
 		const status_change* sc = status_get_sc(src);
 
-		if (sc == nullptr || sc->getSCE(SC_APEX_PHASE) == nullptr)
+		if (sc == nullptr || !sc->hasSCE(SC_APEX_PHASE))
 			return false;
 	}
 

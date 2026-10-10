@@ -9098,7 +9098,7 @@ bool skill_check_condition_castbegin( map_session_data& sd, uint16 skill_id, uin
 				return false;
 			break;
 		case AT_PLUME_PIERCER:
-			if (sc == nullptr || sc->getSCE(SC_WERERAPTOR) == nullptr) {
+			if (sc == nullptr || !sc->hasSCE(SC_WERERAPTOR)) {
 				clif_skill_fail(sd, skill_id, USESKILL_FAIL_CONDITION);
 				return false;
 			}
