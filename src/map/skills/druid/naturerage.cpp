@@ -13,6 +13,7 @@ SkillNatureRage::SkillNatureRage() : SkillImpl(AT_NATURE_RAGE) {
 }
 
 void SkillNatureRage::calculateSkillRatio(const Damage* wd, const block_list* src, const block_list* target, uint16 skill_lv, int32& skillratio, int32 mflag) const {
+	// TODO: Confirm whether the official formula includes SPL or Base Level scaling.
 	skillratio += -100 + 700 * skill_lv;
 }
 
