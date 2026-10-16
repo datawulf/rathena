@@ -51,8 +51,10 @@
 #include "lowflight.cpp"
 #include "nastyslash.cpp"
 #include "natureprotection.cpp"
+#include "naturerage.cpp"
 #include "nomercyclaw.cpp"
 #include "pinionshot.cpp"
+#include "plumepiercer.cpp"
 #include "primalclaw.cpp"
 #include "pulseofmadness.cpp"
 #include "quillspear.cpp"
@@ -71,8 +73,6 @@
 #include "thunderingorb.cpp"
 #include "typhoonwing.cpp"
 #include "windbomb.cpp"
-#include "plumepiercer.cpp"
-#include "naturerage.cpp"
 
 	constexpr int32 kGrowthDuration = 10000;
 
